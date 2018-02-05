@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  if (message !=null)
+    h#ce-greeting  #{message}
+  else if(greeting !=null && userName !=null)
+    h#ce-greeting  #{greeting} #{userName} 
